@@ -11,6 +11,14 @@ const authController = {
           });
         },
       ],
+      login: [
+        // add schema here,
+          (req: Request, res: Response) => {
+            auth.login(req).then((result) => {
+              res.status(result.statusCode).send(result).end();
+            });
+          },
+        ],
 }
 
 export default authController;
