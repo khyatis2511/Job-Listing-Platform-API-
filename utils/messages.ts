@@ -17,7 +17,22 @@ export const msgs = {
         authMissing: "Authorization is not found",
         tokenMissing: "Auth token is not found"
     },
+    auth: {
+        unauthorized: "You are unauthorized",
+        invalidPassword: "Password invalid",
+        loggedIn: "Logged in successfully"
+    },
+
     emailExist : "emailExist",
     registered: "User registered",
-    somethingWrong : "Something went Wrong"
+    somethingWrong : "Something went Wrong",
+    job: {
+        created: "Job created",
+        updated: "Job updated",
+        deleted: "Job deleted",
+        sent: "Job sent successfully",
+        jobIdRequired: "Job Id required",
+        notFound: "Job not found",
+        applied: "Job applied successfully"
+    }
 }
