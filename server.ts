@@ -16,14 +16,15 @@ const jobRouter = Router();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.use(cors({
-  origin: "http://localhost:3000",
-  credentials: true,
-}));
+app.use(
+  cors({
+    origin: "http://localhost:3000",
+    credentials: true,
+  })
+);
 
-
-app.use('/api/v1/auth', applyAuthRoutes(router));
-app.use('/api/v1/job', checkAuth, applyJobRoutes(jobRouter));
+app.use("/api/v1/auth", applyAuthRoutes(router));
+app.use("/api/v1/job", checkAuth, applyJobRoutes(jobRouter));
 
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);

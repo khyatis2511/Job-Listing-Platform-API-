@@ -61,11 +61,11 @@ A job details page showing complete job info.
 ### **Setup**
 1. Clone the repository:
    ```bash
-   git clone https://github.com/khyatis2511/Real-Estate-Admin-Dashboard-API.git
+   git clone https://github.com/khyatis2511/Job-Listing-Platform-API-.git
    ```
 2. Navigate to the project directory:
    ```bash
-   cd real-estate-admin-dashboard-api
+   cd Job-Listing-Platform-API-
    ```
 3. Install dependencies:
    ```bash
