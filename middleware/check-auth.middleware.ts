@@ -10,7 +10,7 @@ const checkAuth = (req: Request, res: Response, next: NextFunction) => {
     return;
   }
 
-  const token = authHeader?.split(' ')[1];
+  const token = authHeader?.split(" ")[1];
   if (!token) {
     res.status(401).send(returnRes(401, msgs.jwt.tokenMissing)).end();
     return;
@@ -21,7 +21,7 @@ const checkAuth = (req: Request, res: Response, next: NextFunction) => {
     (req as any).user = decoded;
     next();
   } catch (error: any) {
-    if (error.message === 'Token expired') {
+    if (error.message === "Token expired") {
       res.status(401).send(returnRes(401, msgs.jwt.tokenExpired)).end();
       return;
     }
